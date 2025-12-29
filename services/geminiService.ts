@@ -2,35 +2,37 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 export const getCarConsultation = async (history: {role: 'user' | 'model', text: string}[]) => {
-  // Use a new instance with the API key directly from the environment to ensure it's up to date
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-  const model = "gemini-3-flash-preview";
+  const model = "gemini-3-pro-preview";
   
-  // Convert history to format expected by API (contents)
   const contents = history.map(msg => ({
     role: msg.role === 'user' ? 'user' : 'model',
     parts: [{ text: msg.text }]
   }));
 
   try {
-    // Call generateContent using the correct SDK pattern
     const response: GenerateContentResponse = await ai.models.generateContent({
       model,
       contents,
       config: {
-        systemInstruction: `You are Motra, a sophisticated AI Concierge for high-end luxury crossover and SUV trading. 
-        Your tone is professional, exclusive, and highly knowledgeable about brands like Bentley, Lamborghini, Land Rover, Porsche, BMW, and Rolls Royce.
-        You help clients find their perfect vehicle based on lifestyle, performance needs, and aesthetic preferences.
-        Keep responses concise and elegant. Refer to the current luxury market trends frequently.`,
+        systemInstruction: `You are the Motra Neural Concierge. Motra is the world's most exclusive AI-driven marketplace dedicated SOLELY to high-end luxury crossover and SUV vehicles (e.g., Rolls-Royce Cullinan, Lamborghini Urus, Ferrari Purosangue, Range Rover Autobiography, Bentley Bentayga).
+
+        Your behavior:
+        - Exhibit extreme sophistication, precision, and market authority.
+        - Discuss vehicle dynamics, bespoke interior materials (Semi-Aniline leather, open-pore woods), and investment potential.
+        - You act as a gatekeeper to the "Private Access" membership.
+        - If users ask about non-luxury cars, politely redirect them to the Motra standard of "Crossover Excellence."
+        - Use "Neural Valuation" and "Concierge Logistics" as your proprietary tools.
+        
+        Keep your prose elegant, concise, and professional.`,
         temperature: 0.7,
-        topP: 0.95,
+        thinkingConfig: { thinkingBudget: 2500 },
       }
     });
 
-    // Access the text property directly from the response object
-    return response.text || "I apologize, I am momentarily unable to assist. Please try again.";
+    return response.text || "My neural pathways are currently processing high-priority market data. How may I assist you further?";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "The concierge is currently attending to another client. Please refresh.";
+    return "The concierge is momentarily unavailable while finalizing a private acquisition. Please retry in a moment.";
   }
 };
