@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import InventoryCard from './components/InventoryCard';
@@ -7,6 +7,11 @@ import AIConcierge from './components/AIConcierge';
 import { LUXURY_SUVS, FEATURES } from './constants';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    // Force the window to start at the top on mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />

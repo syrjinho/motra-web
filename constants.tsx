@@ -7,44 +7,44 @@ export const LUXURY_SUVS: Car[] = [
     id: '1',
     make: 'Range Rover',
     model: 'Autobiography P530',
-    year: 2024,
-    price: 185000,
-    image: 'https://images.unsplash.com/photo-1621245789122-83561a0961da?auto=format&fit=crop&w=800&q=80',
-    mileage: '1,200 km',
+    year: 2023,
+    price: 87882,
+    image: 'https://images.unsplash.com/photo-1606611013016-969c19ba27bb?auto=format&fit=crop&w=800&q=80',
+    mileage: '4,200 km',
     engine: '4.4L V8 Twin Turbo',
     status: 'available'
   },
   {
     id: '2',
     make: 'Porsche',
-    model: 'Cayenne Turbo GT',
+    model: '911 Turbo S',
     year: 2023,
     price: 198000,
     image: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80',
     mileage: '5,500 km',
-    engine: '4.0L V8',
+    engine: '3.7L Flat-6 Twin-Turbo',
     status: 'available'
   },
   {
     id: '3',
-    make: 'Lamborghini',
-    model: 'Urus Performante',
-    year: 2024,
-    price: 345000,
-    image: 'https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=800&q=80',
-    mileage: '850 km',
-    engine: '4.0L V8 Bi-Turbo',
-    status: 'reserved'
+    make: 'Mercedes-Benz',
+    model: 'G 63 AMG',
+    year: 2023,
+    price: 154700,
+    image: 'https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&w=800&q=80',
+    mileage: '2,100 km',
+    engine: '4.0L V8 Biturbo',
+    status: 'available'
   },
   {
     id: '4',
     make: 'BMW',
-    model: 'X7 M60i',
-    year: 2024,
-    price: 125000,
-    image: 'https://images.unsplash.com/photo-1606148429002-1534438b971f?auto=format&fit=crop&w=800&q=80',
-    mileage: '0 km',
-    engine: '4.4L V8 Mild Hybrid',
+    model: 'M5 Competition',
+    year: 2023,
+    price: 95000,
+    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80',
+    mileage: '8,900 km',
+    engine: '4.4L V8 M TwinPower',
     status: 'available'
   }
 ];
@@ -60,8 +60,8 @@ export const FEATURES: Feature[] = [
     )
   },
   {
-    title: 'Curated Excellence',
-    description: 'Only the top 1% of luxury crossovers pass our 200-point AI-driven inspection.',
+    title: 'AI-verified VIN data',
+    description: 'Verified accident report, inspection history, title and images only.',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
