@@ -1,6 +1,8 @@
 
 {
-  "name": "Motra - AI Luxury SUV Platform",
-  "description": "A premium AI-driven marketplace for high-end luxury SUV and crossover vehicles, featuring intelligent valuation and a virtual concierge.",
-  "requestFramePermissions": []
+  "name": "Motra - Luxury SUV Cross-Border Platform",
+  "description": "An AI-powered cross-border marketplace for luxury SUVs, connecting US sellers with Middle Eastern buyers with automated compliance and VIN verification.",
+  "requestFramePermissions": [
+    "camera"
+  ]
 }

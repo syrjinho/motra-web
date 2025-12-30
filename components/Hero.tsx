@@ -1,32 +1,62 @@
 
 import React from 'react';
 
-const Hero: React.FC = () => {
+export const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
-      {/* Updated Spline 3D Scene - quantum-RhEfGxSlSOadQtlSMt9cqnzX */}
-      <div className="absolute inset-0 z-0">
-        <iframe 
-          src="https://my.spline.design/quantum-RhEfGxSlSOadQtlSMt9cqnzX/" 
-          frameBorder="0" 
-          width="100%" 
-          height="100%"
-          title="Motra Neural Quantum Core"
-          className="w-full h-full scale-[1.05]"
-        ></iframe>
-        
-        {/* Luxury Vignette and Cinematic Gradient Overlays */}
-        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_25%,rgba(0,0,0,0.7)_100%)]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050505] pointer-events-none"></div>
-      </div>
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sky-500/10 to-transparent pointer-events-none" />
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/5 blur-[120px] rounded-full" />
+      
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div>
+          <div className="flex items-center gap-3 mb-6">
+            <span className="h-px w-8 bg-sky-400"></span>
+            <span className="text-xs font-bold tracking-[0.2em] text-sky-400 uppercase">AI-powered used car trading platform</span>
+          </div>
+          <h1 className="text-6xl lg:text-8xl font-serif font-medium leading-[1.1] mb-8">
+            Luxury SUVs, <br />
+            <span className="italic blue-gradient">Without Borders.</span>
+          </h1>
+          <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed border-l-2 border-white/10 pl-6">
+            The elite gateway for US luxury sellers and Middle Eastern buyers. 
+            Powered by AI to ensure every VIN is a verified truth.
+          </p>
+          <div className="flex flex-wrap gap-5">
+            <button className="btn-blue px-12 py-4 rounded-full text-black font-black text-sm tracking-widest uppercase shadow-2xl shadow-sky-500/20">
+              Explore Inventory
+            </button>
+          </div>
+        </div>
 
-      {/* 
-          Minimalist Hero Composition: 
-          Pure visual identity. Scroll indicator and text removed per user request 
-          to "erase this part" (gap and text).
-      */}
+        <div className="relative group">
+          <div className="absolute -inset-4 bg-gradient-to-tr from-sky-500/20 to-transparent blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition-opacity" />
+          <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl bg-neutral-900">
+            <img 
+              src="https://media.architecturaldigest.com/photos/5a25c495514be80fddaacd66/16:9/w_2240,c_limit/Lamborghini%20Urus%2013.jpg" 
+              alt="Lamborghini Urus Luxury SUV" 
+              className="w-full h-[600px] object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            <div className="absolute bottom-10 left-10">
+              <p className="text-xs font-bold text-sky-400 tracking-widest uppercase mb-1">Featured Asset</p>
+              <h3 className="text-2xl font-serif font-bold">Lamborghini Urus</h3>
+            </div>
+          </div>
+          
+          {/* Floating Verified Badge */}
+          <div className="absolute -top-6 -right-6 glass-card p-4 rounded-2xl shadow-2xl animate-bounce-slow border-sky-500/30">
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-sky-400 rounded-full flex items-center justify-center mb-2 shadow-lg">
+                <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span className="text-[10px] font-black tracking-tighter uppercase">AI Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
-
-export default Hero;
