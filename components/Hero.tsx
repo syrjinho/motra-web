@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
             Luxury SUVs, <br />
             <span className="italic blue-gradient">Without Borders.</span>
           </h1>
-          <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed border-l-2 border-white/10 pl-6">
+          <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
             The elite gateway for US luxury sellers and Middle Eastern buyers. 
             Powered by AI to ensure every VIN is a verified truth.
           </p>
@@ -37,24 +37,15 @@ export const Hero: React.FC = () => {
               alt="Lamborghini Urus Luxury SUV" 
               className="w-full h-[600px] object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            {/* Added a dark overlay for readability since text is now white */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity duration-500" />
             <div className="absolute bottom-10 left-10">
-              <p className="text-xs font-bold text-sky-400 tracking-widest uppercase mb-1">Featured Asset</p>
-              <h3 className="text-2xl font-serif font-bold">Lamborghini Urus</h3>
+              <p className="text-xs font-bold text-white tracking-widest uppercase mb-1 drop-shadow-md">Featured Asset</p>
+              <h3 className="text-2xl font-serif font-bold text-white drop-shadow-md">Lamborghini Urus</h3>
             </div>
           </div>
           
-          {/* Floating Verified Badge */}
-          <div className="absolute -top-6 -right-6 glass-card p-4 rounded-2xl shadow-2xl animate-bounce-slow border-sky-500/30">
-            <div className="flex flex-col items-center">
-              <div className="w-12 h-12 bg-sky-400 rounded-full flex items-center justify-center mb-2 shadow-lg">
-                <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <span className="text-[10px] font-black tracking-tighter uppercase">AI Verified</span>
-            </div>
-          </div>
+          {/* Floating Verified Badge removed as requested previously */}
         </div>
       </div>
     </section>
