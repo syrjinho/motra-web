@@ -13,7 +13,7 @@ const SUV_COLLECTION = [
     name: "Porsche Cayenne Turbo",
     year: "2024",
     price: "$148,500",
-    img: "https://www.netcarshow.com/Porsche-Cayenne_Turbo_E-Hybrid_Coupe-2024-wallpaper.jpg",
+    img: "https://images.pistonheads.com/nimg/47779/blobid0.jpg",
     status: "Export Ready",
     specs: "4.0L V8 • S"
   },
