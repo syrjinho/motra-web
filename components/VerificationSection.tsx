@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { GoogleGenAI } from "@google/genai";
 
@@ -51,7 +50,7 @@ export const VerificationSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <span className="text-xs font-bold text-amber-500 tracking-[0.3em] uppercase mb-4 block">Transparency First</span>
-            <h2 className="text-4xl lg:text-6xl font-serif mb-8">AI Truth <span className="italic">Scanning</span></h2>
+            <h2 className="text-4xl lg:text-6xl font-serif mb-8">AI Truth <span>Scanning</span></h2>
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
               Every vehicle on Motra undergoes a deep-tissue AI audit. We don't just check VINs; we analyze pixels, history, and compliance data to eliminate the "Broker Gap."
             </p>
@@ -106,7 +105,7 @@ export const VerificationSection: React.FC = () => {
                   {report ? (
                     <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
                       <p className="text-xs text-amber-500 font-bold mb-2 uppercase tracking-widest">AI Audit Summary:</p>
-                      <div className="bg-white/5 p-4 rounded-xl border border-amber-500/20 leading-relaxed text-sm text-gray-300 italic">
+                      <div className="bg-white/5 p-4 rounded-xl border border-amber-500/20 leading-relaxed text-sm text-gray-300">
                         "{report}"
                       </div>
                       <div className="mt-4 flex gap-4">

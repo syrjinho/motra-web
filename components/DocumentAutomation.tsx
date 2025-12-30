@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const DocumentAutomation: React.FC = () => {
@@ -12,7 +11,7 @@ export const DocumentAutomation: React.FC = () => {
           <div>
             <h2 className="text-4xl lg:text-5xl font-serif font-medium mb-8 leading-tight">
               One-Click <br />
-              <span className="italic">Compliance</span>
+              <span>Compliance</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-10">
               Cross-border trading is complex. Motra makes it simple. Our AI generates every necessary legal document—from sales contracts to customs clearance forms—instantly.
@@ -38,7 +37,7 @@ export const DocumentAutomation: React.FC = () => {
 
           <div className="flex flex-col justify-center">
              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-sky-500 to-sky-200 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div className="absolute -inset-1 bg-gradient-r from-sky-500 to-sky-200 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <div className="relative bg-[#0a0a0a] rounded-3xl p-8 border border-white/10">
                    <div className="flex justify-between items-center mb-6">
                       <span className="text-xs uppercase tracking-widest text-gray-500 font-bold">Document Stream</span>
@@ -60,7 +59,7 @@ export const DocumentAutomation: React.FC = () => {
                       ))}
                    </div>
                    <div className="mt-8 pt-8 border-t border-white/10 text-center">
-                      <p className="text-xs text-gray-500 mb-4 italic">Estimated Savings: 40+ Man-Hours per Transaction</p>
+                      <p className="text-xs text-gray-500 mb-4 uppercase tracking-widest font-bold">Estimated Savings: 40+ Man-Hours per Transaction</p>
                       <button className="btn-blue w-full py-3 rounded-xl text-black font-bold uppercase text-xs tracking-widest">
                         Automate My Deal
                       </button>

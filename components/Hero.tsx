@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Hero: React.FC = () => {
@@ -11,12 +10,11 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-8 bg-sky-400"></span>
             <span className="text-xs font-bold tracking-[0.2em] text-sky-400 uppercase">AI-powered used car trading platform</span>
           </div>
-          <h1 className="text-6xl lg:text-8xl font-serif font-medium leading-[1.1] mb-8">
+          <h1 className="text-5xl lg:text-[4.8rem] font-serif font-medium leading-[1.1] mb-8 text-white">
             Luxury SUVs, <br />
-            <span className="italic blue-gradient">Without Borders.</span>
+            <span>Without Borders.</span>
           </h1>
           <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
             The elite gateway for US luxury sellers and Middle Eastern buyers. 
@@ -37,15 +35,12 @@ export const Hero: React.FC = () => {
               alt="Lamborghini Urus Luxury SUV" 
               className="w-full h-[600px] object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
             />
-            {/* Added a dark overlay for readability since text is now white */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity duration-500" />
             <div className="absolute bottom-10 left-10">
               <p className="text-xs font-bold text-white tracking-widest uppercase mb-1 drop-shadow-md">Featured Asset</p>
               <h3 className="text-2xl font-serif font-bold text-white drop-shadow-md">Lamborghini Urus</h3>
             </div>
           </div>
-          
-          {/* Floating Verified Badge removed as requested previously */}
         </div>
       </div>
     </section>

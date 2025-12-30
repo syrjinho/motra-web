@@ -23,7 +23,7 @@ const SUV_COLLECTION = [
     price: "$109,000",
     img: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=600",
     status: "Certified",
-    specs: "G-Manufaktur"
+    specs: "AMG-Power V8"
   },
   {
     name: "Lamborghini Urus SE",
@@ -39,12 +39,12 @@ export const VehicleGallery: React.FC = () => {
   return (
     <section id="inventory" className="py-24 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20">
+        <div className="flex flex-col items-center text-center mb-20">
           <div>
-            <h2 className="text-5xl font-serif mb-4">The <span className="italic blue-gradient uppercase">MOTRA</span> Fleet</h2>
+            <h2 className="text-5xl font-serif mb-4"><span className="blue-gradient uppercase">MOTRA</span> Fleet</h2>
             <p className="text-gray-500 tracking-wide uppercase text-xs font-bold">Curated US Inventory for MENA Logistics</p>
           </div>
-          <div className="flex gap-4 mt-8 md:mt-0">
+          <div className="flex gap-4 mt-8">
              <button className="px-6 py-3 border border-white/10 rounded-full text-xs font-bold hover:bg-white/5 transition-all">All Assets</button>
              <button className="px-6 py-3 border border-sky-500/50 rounded-full text-xs font-bold text-sky-400 hover:bg-sky-500/10 transition-all">Trending</button>
           </div>
