@@ -22,15 +22,9 @@ const Hero: React.FC = () => {
 
       {/* 
           Minimalist Hero Composition: 
-          No text overlay to allow the intricate 3D animation to represent 
-          the "Motra Neural Core" brand identity.
+          Pure visual identity. Scroll indicator and text removed per user request 
+          to "erase this part" (gap and text).
       */}
-
-      {/* High-End Scroll Discovery Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-5 animate-pulse pointer-events-none">
-        <span className="uppercase tracking-[0.8em] text-white/20 text-[9px] font-bold">Initiating Luxury Acquisition</span>
-        <div className="w-[1px] h-24 bg-gradient-to-b from-white/30 via-white/5 to-transparent"></div>
-      </div>
     </section>
   );
 };

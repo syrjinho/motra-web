@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Car, Feature } from './types';
 
@@ -9,7 +8,7 @@ export const LUXURY_SUVS: Car[] = [
     model: 'Autobiography P530',
     year: 2024,
     price: 168500,
-    image: 'https://images.unsplash.com/photo-1606611013016-969c19ba27bb?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1606248231110-5e3940be0eeb?auto=format&fit=crop&w=1200&q=80',
     mileage: '1,200 km',
     engine: '4.4L V8 Twin Turbo',
     status: 'available'
@@ -20,7 +19,7 @@ export const LUXURY_SUVS: Car[] = [
     model: 'Urus Performante',
     year: 2023,
     price: 260000,
-    image: 'https://images.unsplash.com/photo-1581439645268-ad7bb486964a?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1581404099043-34e85973693e?auto=format&fit=crop&w=1200&q=80',
     mileage: '3,500 km',
     engine: '4.0L V8 Twin-Turbo',
     status: 'available'
@@ -42,7 +41,7 @@ export const LUXURY_SUVS: Car[] = [
     model: 'Bentayga S',
     year: 2023,
     price: 245000,
-    image: 'https://images.unsplash.com/photo-1634629457310-911145f479e0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1631557008781-6f4e135be3c0?auto=format&fit=crop&w=1200&q=80',
     mileage: '2,800 km',
     engine: '4.0L V8 Twin-Turbo',
     status: 'available'

@@ -19,8 +19,8 @@ const App: React.FC = () => {
       <main>
         <Hero />
 
-        {/* Features Section */}
-        <section id="about" className="py-24 px-6 relative z-10">
+        {/* Features Section - Reduced top padding to close the gap */}
+        <section id="about" className="pt-0 pb-24 px-6 relative z-10 -mt-10">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-3 gap-12">
               {FEATURES.map((feature, idx) => (
