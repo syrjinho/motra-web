@@ -8,6 +8,7 @@ export const Footer: React.FC = () => {
           <div className="text-center md:text-left">
             <p className="text-2xl font-serif font-bold tracking-tight blue-gradient mb-2">MOTRA</p>
             <p className="text-[10px] text-gray-500 tracking-[0.1em] uppercase font-bold">chris.chun@motra.us</p>
+            <p className="text-[10px] text-gray-500 tracking-[0.1em] uppercase font-bold mt-1">108 Moffett Blvd. Mountain View, CA 94043</p>
           </div>
           <div className="flex gap-12 text-sm text-gray-500 font-medium">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
