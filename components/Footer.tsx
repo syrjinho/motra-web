@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Footer: React.FC = () => {
@@ -8,12 +7,12 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div className="text-center md:text-left">
             <p className="text-2xl font-serif font-bold tracking-tight blue-gradient mb-2">MOTRA</p>
-            <p className="text-xs text-gray-500 tracking-[0.2em] uppercase font-bold">Luxury SUV Ecosystem</p>
+            <p className="text-[10px] text-gray-500 tracking-[0.1em] uppercase font-bold">chris.chun@motra.us</p>
           </div>
           <div className="flex gap-12 text-sm text-gray-500 font-medium">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Contact Support</a>
+            <a href="mailto:chris.chun@motra.us" className="hover:text-white transition-colors">Contact Support</a>
           </div>
           <div className="flex gap-4">
             <div className="w-10 h-10 rounded-full glass-card flex items-center justify-center cursor-pointer hover:bg-white/10">
