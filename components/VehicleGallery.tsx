@@ -4,7 +4,7 @@ const SUV_COLLECTION = [
   {
     name: "Range Rover Autobiography",
     year: "2024",
-    price: "$113,500",
+    price: "$127,000",
     img: "https://canadianautoreview.ca/wp-content/uploads/2024/07/rr-ab-35.jpg",
     status: "Verified",
     specs: "4.4L V8 • LWB"
@@ -12,7 +12,7 @@ const SUV_COLLECTION = [
   {
     name: "Porsche Cayenne Turbo",
     year: "2024",
-    price: "$148,500",
+    price: "$113,000",
     img: "https://images.pistonheads.com/nimg/47779/blobid0.jpg",
     status: "Export Ready",
     specs: "4.0L V8 • S"
@@ -20,7 +20,7 @@ const SUV_COLLECTION = [
   {
     name: "Mercedes-Benz G63 AMG",
     year: "2023",
-    price: "$109,000",
+    price: "$139,000",
     img: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=600",
     status: "Certified",
     specs: "AMG-Power V8"
@@ -28,7 +28,7 @@ const SUV_COLLECTION = [
   {
     name: "Lamborghini Urus SE",
     year: "2024",
-    price: "$260,000",
+    price: "$225,000",
     img: "https://www.lamborghinihouston.com/static/dealer-12175/2023-lamborghini-urus-front-three-quarters-3-1664461514.jpeg",
     status: "New Asset",
     specs: "657 HP • AWD"
